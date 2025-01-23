@@ -1,32 +1,54 @@
-name: Feature request
+name: Feature Request
 description: Suggest an idea for this project
-labels: ["enhancement"]
-assignees:
-  - ErikNovak
+title: '[FEATURE] '
+labels: ['enhancement']
+assignees: []
 body:
   - type: markdown
     attributes:
       value: |
-        Thanks for taking the time to fill out this feature request!
+        Thanks for suggesting a new feature!
+
   - type: textarea
-    id: issue-connection
+    id: problem
     attributes:
-      label: Connected to a problem?
-      description: Is your feature request related to a problem? Please describe.
-      placeholder: Provide a clear and concise description of what the problem is. Ex. I'm always frustrated when [...]
+      label: Is your feature request related to a problem?
+      description: A clear description of the problem you're trying to solve
+      placeholder: I'm always frustrated when...
     validations:
       required: true
+
   - type: textarea
-    id: possible-solution
+    id: solution
     attributes:
-      label: Solution?
-      description: Describe the solution you'd like
+      label: Describe the solution you'd like
+      description: What would you like to happen?
+      placeholder: It would be great if...
     validations:
       required: true
+
   - type: textarea
     id: alternatives
     attributes:
-      label: Alternatives?
-      description: Describe alternatives you've considered
+      label: Describe alternatives you've considered
+      description: What alternative solutions have you thought about?
+      placeholder: I also considered...
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priority
+      description: How important is this feature to you?
+      options:
+        - Critical
+        - High
+        - Medium
+        - Low
     validations:
-      required: false
+      required: true
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional context
+      description: Add any other context, screenshots, or examples about the feature request here
